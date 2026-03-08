@@ -1,8 +1,8 @@
 # 📚 Tugas Pemrograman Berorientasi Objek (OOP) - Java
 
-**Nama:** [Nama Kamu / Pxlz]  
-**NIM:** [NIM Kamu]  
-**Kelas/Organisasi:** [Nama Kelas] / HMTI  
+**Nama:** Muhammad Alfarizzi  
+**NIM:** 20240040043  
+**Kelas/Organisasi:** TI24E 
 
 ---
 
