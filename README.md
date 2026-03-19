@@ -10,5 +10,7 @@ Repositori ini berisi arsip tugas praktikum/teori mata kuliah OOP.
 **📌 Daftar Sesi Praktikum**
 | Sesi | Tautan Jawaban |
 |:---:|---|
+| 00 | [Sesi kelas](./sesi_kelas) |
 | 01 | [Buka Sesi 1](./sesi_1) |
 | 02 | [Buka Sesi 2](./sesi_2) |
+| 03 | [Buka Sesi 3](./sesi_3) |
