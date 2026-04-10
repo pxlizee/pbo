@@ -1,7 +1,7 @@
 package sesi_4;
 
 class ProdukDigital extends Produk {
-    private String masaAktif;
+    protected String masaAktif;
 
     public ProdukDigital(String nama, int harga, String masaAktif) {
         super(nama, harga);

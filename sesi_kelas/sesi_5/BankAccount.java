@@ -3,7 +3,6 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 public class BankAccount {
-
     private double saldo;
     private String accountNumber;
     private String accountName;
@@ -18,14 +17,12 @@ public class BankAccount {
         if (amount > 0) {
             this.saldo += amount;
         } else {
-            System.out.println("Deposit failed: amount must be positive.");
+            throw new IllegalArgumentException("Deposit amount must be positive.");
         }
     }
 
     public void withdraw(double amount) {
-        if (amount <= 0) {
-            System.out.println("Withdrawal failed: amount must be positive.");
-        } else if (this.saldo >= amount) {
+        if (amount > 0 && this.saldo >= amount) {
             this.saldo -= amount;
         } else {
             System.out.println("Withdrawal failed: insufficient funds.");
@@ -44,13 +41,11 @@ public class BankAccount {
         return this.accountName;
     }
 
-    // Reuse NumberFormat instance for efficiency
-    private static final NumberFormat FORMAT = NumberFormat.getInstance(new Locale("id", "ID"));
-
     @Override
     public String toString() {
+        NumberFormat format = NumberFormat.getInstance(new Locale("id", "ID"));
         return "Account number: " + this.accountNumber +
                 "\nAccount name: " + this.accountName +
-                "\nSaldo: " + FORMAT.format(this.saldo);
+                "\nSaldo: " + format.format(this.saldo);
     }
 }
