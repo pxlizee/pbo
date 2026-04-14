@@ -1,3 +1,4 @@
+package sesi_3;
 
 import java.util.Scanner;
 import java.util.List;
@@ -104,4 +105,4 @@ public class Main {
             System.out.println(label + ": " + daftarNama.size() + " yaitu " + String.join(", ", daftarNama));
         }
     }
-} 
+}
