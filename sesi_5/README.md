@@ -2,8 +2,8 @@
 
 Repositori ini berisi tugas mata kuliah Pemrograman Berorientasi Objek (PBO) Sesi V mengenai implementasi **Inheritance (Pewarisan), Encapsulation (Pengkapsulan), dan Method Overriding** dalam bahasa pemrograman Java.
 
-- **Nama** : [Isi Nama Lengkapmu]
-- **NIM** : [Isi NIM Kamu]
+- **Nama** : Muhammad Alfarizzi Sutisna
+- **NIM** : 20240040043
 - **Prodi** : Teknik Informatika
 - **Kampus**: Universitas Nusaputra
 - **Dosen** : Yulhan Wahyudin, M.Kom
