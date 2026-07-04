@@ -19,3 +19,6 @@ Repositori ini berisi arsip tugas praktikum/teori mata kuliah OOP.
 | 06 | [Buka Sesi 6](./sesi_6) |
 | 07 | [Buka Sesi 7](./sesi_7) |
 | 10 | [Buka Sesi 10](./sesi_10) |
+| 11 | [Buka Sesi 11](./sesi_11) |
+| 12 | [Buka Sesi 12](./sesi_12) |
+| 13 | [Buka Sesi 13](./sesi_13) |
