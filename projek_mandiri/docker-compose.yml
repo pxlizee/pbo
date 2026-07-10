@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: vehicle-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: vehicle_db
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: vehicle_user
+      MYSQL_PASSWORD: vehicle_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql
+
+  app:
+    image: vehicle-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vehicle-app
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/vehicle_db?allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: vehicle_user
+      SPRING_DATASOURCE_PASSWORD: vehicle_password
+
+volumes:
+  db_data:
